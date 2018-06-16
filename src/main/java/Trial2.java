@@ -38,6 +38,10 @@ public class Trial2 extends AbstractTrial {
 
             // Правки можно вносить от этой линии
 
+            if (val.getAndSet(val.get() == false))
+                put(1);
+            else
+                put(2);
 
             // До этой
         });

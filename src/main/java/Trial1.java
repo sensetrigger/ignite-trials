@@ -1,3 +1,4 @@
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Trial1 extends AbstractTrial {
@@ -43,6 +44,8 @@ public class Trial1 extends AbstractTrial {
 
             // Правки можно вносить от этой линии
 
+            put(val.addAndGet(1));
+            val.compareAndSet(3,0);
 
             // До этой
         });
